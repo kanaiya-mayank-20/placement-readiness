@@ -1,0 +1,54 @@
+version: 1
+
+# must-have skills count triple vs nice-to-have
+jd_weights:
+  must: 3.0
+  nice: 1.0
+
+# credit given when the JD asks for X and the candidate has a *related* skill
+related_credit: 0.6
+
+# Resume score components (0-1 each), must sum to 1.0
+resume_score:
+  skills: 0.50
+  experience: 0.20
+  projects: 0.15
+  education: 0.10
+  quality: 0.05
+
+# GitHub score components (0-1 each), must sum to 1.0
+# (role-specific overrides live in app/services/github/signals.py)
+github_score:
+  skill_evidence: 0.45
+  project_quality: 0.20
+  activity_recency: 0.15
+  collaboration: 0.10
+  depth: 0.10
+
+# Overall mix. Frontend gets more weight on GitHub because visible work proves more.
+overall:
+  resume: 0.55
+  github: 0.35
+  role_fit: 0.10
+
+role_overrides:
+  frontend: {resume: 0.45, github: 0.45, role_fit: 0.10}
+  backend: {resume: 0.55, github: 0.35, role_fit: 0.10}
+  fullstack: {resume: 0.50, github: 0.40, role_fit: 0.10}
+  data: {resume: 0.55, github: 0.35, role_fit: 0.10}
+  ml: {resume: 0.50, github: 0.40, role_fit: 0.10}
+  devops: {resume: 0.45, github: 0.45, role_fit: 0.10}
+  mobile: {resume: 0.50, github: 0.40, role_fit: 0.10}
+
+# Used when the student has no usable GitHub profile: never punish them for it.
+overall_no_github:
+  resume: 0.80
+  github: 0.00
+  role_fit: 0.20
+
+retrieval:
+  rrf_k: 60
+  embedding_share: 0.5
+  keyword_share: 0.5
+
+seniority_overqualified_penalty: 0.15

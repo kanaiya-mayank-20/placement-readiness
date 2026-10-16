@@ -1,0 +1,768 @@
+version: 1
+# canonical_skill:
+#   aliases:   [alternative names recruiters/candidates write]
+#   category:  language | frontend | backend | database | devops | cloud | data | ml | mobile | testing | tool | concept
+#   related:   [skills that give partial credit when the JD asks for this one]
+#   roles:     [roles where this skill matters most]
+skills:
+  # ---------------- languages ----------------
+  python:
+    aliases: [python3, py, python2]
+    category: language
+    related: [fastapi, django, flask, numpy, pandas]
+    roles: [backend, data, ml]
+  java:
+    aliases: [java8, java11, java17, openjdk]
+    category: language
+    related: [spring, springboot, kotlin]
+    roles: [backend]
+  javascript:
+    aliases: [js, es6, ecmascript, ecmascript6, vanillajs, vanilla-js]
+    category: language
+    related: [typescript, react, nodejs, vue]
+    roles: [frontend, fullstack, backend]
+  typescript:
+    aliases: [ts, typescript5]
+    category: language
+    related: [javascript, react, nextjs, nodejs]
+    roles: [frontend, fullstack, backend]
+  c:
+    aliases: [c language, ansi c]
+    category: language
+    related: [cpp, embedded]
+    roles: [backend]
+  cpp:
+    aliases: ["c++", "c++17", "cplusplus"]
+    category: language
+    related: [c, rust]
+    roles: [backend]
+  csharp:
+    aliases: ["c#", ".net", dotnet, asp.net, aspnet]
+    category: language
+    related: [java, azure]
+    roles: [backend, fullstack]
+  go:
+    aliases: [golang, go-lang]
+    category: language
+    related: [microservices, docker, kubernetes]
+    roles: [backend, devops]
+  rust:
+    aliases: [rustlang]
+    category: language
+    related: [cpp, systems-programming]
+    roles: [backend]
+  kotlin:
+    aliases: [kotlin-android]
+    category: language
+    related: [java, android, jetpackcompose]
+    roles: [mobile]
+  swift:
+    aliases: [swift5, swiftui]
+    category: language
+    related: [ios, objective-c]
+    roles: [mobile]
+  ruby:
+    aliases: [ruby-on-rails]
+    category: language
+    related: [rails]
+    roles: [backend]
+  php:
+    aliases: [php8, php7]
+    category: language
+    related: [laravel, wordpress]
+    roles: [backend, fullstack]
+  r:
+    aliases: ["r programming", r-language, rstats]
+    category: language
+    related: [statistics, ggplot2, pandas]
+    roles: [data, ml]
+  sql:
+    aliases: [structured-query-language, t-sql, plsql, "pl/sql"]
+    category: language
+    related: [postgresql, mysql, oracle]
+    roles: [backend, data]
+  bash:
+    aliases: [shell, shell-scripting, sh, zsh, powershell]
+    category: language
+    related: [linux, scripting]
+    roles: [devops]
+  dart:
+    aliases: [dartlang]
+    category: language
+    related: [flutter]
+    roles: [mobile]
+
+  # ---------------- frontend ----------------
+  react:
+    aliases: [reactjs, "react.js", "react js", reactjsx, "react 18"]
+    category: frontend
+    related: [nextjs, redux, javascript, typescript]
+    roles: [frontend, fullstack]
+  angular:
+    aliases: [angularjs, "angular 2+", "angular2"]
+    category: frontend
+    related: [typescript, rxjs, javascript]
+    roles: [frontend, fullstack]
+  vue:
+    aliases: [vuejs, "vue.js", "vue 3", vue3]
+    category: frontend
+    related: [nuxt, javascript, typescript]
+    roles: [frontend, fullstack]
+  nextjs:
+    aliases: ["next.js", next-js, next]
+    category: frontend
+    related: [react, typescript, vercel]
+    roles: [frontend, fullstack]
+  nuxt:
+    aliases: ["nuxt.js", nuxt-js]
+    category: frontend
+    related: [vue, javascript]
+    roles: [frontend, fullstack]
+  svelte:
+    aliases: [sveltejs, "svelte.js", sveltekit]
+    category: frontend
+    related: [javascript, typescript]
+    roles: [frontend, fullstack]
+  html:
+    aliases: [html5, semantic-html]
+    category: frontend
+    related: [css, accessibility]
+    roles: [frontend, fullstack]
+  css:
+    aliases: [css3, css-grid, flexbox]
+    category: frontend
+    related: [html, sass, tailwind]
+    roles: [frontend, fullstack]
+  tailwind:
+    aliases: [tailwindcss, "tailwind css", tailwind-css]
+    category: frontend
+    related: [css, react]
+    roles: [frontend, fullstack]
+  bootstrap:
+    aliases: [bootstrap5, bootstrap-4]
+    category: frontend
+    related: [css, html]
+    roles: [frontend, fullstack]
+  sass:
+    aliases: [scss, "sass/scss"]
+    category: frontend
+    related: [css]
+    roles: [frontend]
+  jquery:
+    aliases: [jquery3]
+    category: frontend
+    related: [javascript]
+    roles: [frontend]
+  redux:
+    aliases: [react-redux, redux-toolkit, zustand]
+    category: frontend
+    related: [react, state-management]
+    roles: [frontend, fullstack]
+  webpack:
+    aliases: [webpack5, bundler]
+    category: frontend
+    related: [vite, babel, javascript]
+    roles: [frontend]
+  vite:
+    aliases: [vitejs, "vite.js"]
+    category: frontend
+    related: [webpack, react, vue]
+    roles: [frontend, fullstack]
+  materialui:
+    aliases: [mui, "@mui/material", material-ui]
+    category: frontend
+    related: [react, css]
+    roles: [frontend, fullstack]
+  accessibility:
+    aliases: [a11y, wcag, aria]
+    category: frontend
+    related: [html, react]
+    roles: [frontend]
+
+  # ---------------- backend ----------------
+  fastapi:
+    aliases: ["fast api", fast-api]
+    category: backend
+    related: [python, flask, django, pydantic]
+    roles: [backend, fullstack]
+  django:
+    aliases: ["django rest framework", drf, django-rest-framework]
+    category: backend
+    related: [python, flask, fastapi]
+    roles: [backend, fullstack]
+  flask:
+    aliases: [flask-api, python-flask]
+    category: backend
+    related: [python, django, fastapi]
+    roles: [backend, fullstack]
+  nodejs:
+    aliases: ["node.js", node-js, node]
+    category: backend
+    related: [express, javascript, typescript]
+    roles: [backend, fullstack]
+  express:
+    aliases: [expressjs, "express.js", express-js]
+    category: backend
+    related: [nodejs, javascript]
+    roles: [backend, fullstack]
+  nestjs:
+    aliases: ["nestjs.js", nest-js]
+    category: backend
+    related: [nodejs, typescript, express]
+    roles: [backend, fullstack]
+  spring:
+    aliases: [spring-framework, spring-mvc]
+    category: backend
+    related: [java, springboot]
+    roles: [backend]
+  springboot:
+    aliases: ["spring boot", spring-boot]
+    category: backend
+    related: [java, spring]
+    roles: [backend]
+  rails:
+    aliases: ["ruby on rails", rubyonrails, rails7]
+    category: backend
+    related: [ruby, ruby-on-rails]
+    roles: [backend]
+  laravel:
+    aliases: [laravel9, php-laravel]
+    category: backend
+    related: [php, mysql]
+    roles: [backend, fullstack]
+  graphql:
+    aliases: [graph-ql, apollo-graphql, apollo]
+    category: backend
+    related: [rest-api, nodejs]
+    roles: [backend, fullstack]
+  restapi:
+    aliases: [rest, "rest api", "rest apis", restful, "rest apis", web-services, http-api]
+    category: concept
+    related: [graphql, http, swagger]
+    roles: [backend, fullstack]
+  grpc:
+    aliases: ["grpc", protocol-buffers, protobuf]
+    category: backend
+    related: [microservices, go]
+    roles: [backend]
+  jwt:
+    aliases: [json-web-tokens, json-web-token, token-auth]
+    category: concept
+    related: [oauth, authentication, security]
+    roles: [backend, fullstack]
+  oauth:
+    aliases: [oauth2, "oauth 2.0", sso, single-sign-on]
+    category: concept
+    related: [jwt, authentication, security]
+    roles: [backend, fullstack]
+  microservices:
+    aliases: ["micro-services", microservices-architecture, service-oriented-architecture]
+    category: concept
+    related: [docker, kubernetes, restapi]
+    roles: [backend, devops]
+  websockets:
+    aliases: [websocket, socket-io, socket.io, "web sockets"]
+    category: backend
+    related: [restapi, nodejs]
+    roles: [backend, fullstack]
+  openapi:
+    aliases: [swagger, openapi-spec, openapi3, api-docs]
+    category: concept
+    related: [restapi, documentation]
+    roles: [backend, fullstack]
+  redis:
+    aliases: [redis-cache, key-value-store, valkey]
+    category: database
+    related: [caching, postgresql, mongodb]
+    roles: [backend, devops]
+
+  # ---------------- databases ----------------
+  postgresql:
+    aliases: [postgres, postgresql14, pg, psql, "postgre sql"]
+    category: database
+    related: [mysql, sql, redis]
+    roles: [backend, data, fullstack]
+  mysql:
+    aliases: [mysql8, mariadb]
+    category: database
+    related: [postgresql, sql]
+    roles: [backend, data, fullstack]
+  mongodb:
+    aliases: [mongo, "mongo db", mongodb-atlas]
+    category: database
+    related: [nosql, redis, express]
+    roles: [backend, fullstack]
+  nosql:
+    aliases: ["no-sql", non-relational, document-store]
+    category: database
+    related: [mongodb, cassandra, dynamodb]
+    roles: [backend, data]
+  sqlite:
+    aliases: [sqlite3]
+    category: database
+    related: [sql, postgresql]
+    roles: [backend, mobile]
+  cassandra:
+    aliases: [apache-cassandra, cassandradb]
+    category: database
+    related: [nosql, distributed-systems]
+    roles: [backend, data]
+  dynamodb:
+    aliases: [amazon-dynamodb, dynamo-db]
+    category: database
+    related: [aws, nosql]
+    roles: [backend, devops]
+  elasticsearch:
+    aliases: [elastic, opensearch, elk-stack, elastic-search]
+    category: database
+    related: [kibana, search, lucene]
+    roles: [backend, data]
+  oracle:
+    aliases: [oracle-db, oracledb, oracle-sql]
+    category: database
+    related: [sql, plsql]
+    roles: [backend, data]
+  sqlserver:
+    aliases: ["sql server", mssql, "ms sql", t-sql]
+    category: database
+    related: [sql, azure]
+    roles: [backend, data]
+  firebase:
+    aliases: [firebase-firestore, firestore, firebase-auth, firebasestorage]
+    category: database
+    related: [google-cloud, mobile, react]
+    roles: [mobile, fullstack, frontend]
+  supabase:
+    aliases: [supabase-io]
+    category: database
+    related: [postgresql, react]
+    roles: [fullstack, backend]
+
+  # ---------------- devops / cloud ----------------
+  docker:
+    aliases: [dockerfile, docker-compose, dockercontainers, "docker containers"]
+    category: devops
+    related: [kubernetes, ci-cd, linux]
+    roles: [devops, backend]
+  kubernetes:
+    aliases: [k8s, kubectl, kube]
+    category: devops
+    related: [docker, helm, terraform]
+    roles: [devops, backend]
+  terraform:
+    aliases: [terraform-cloud, iac, infrastructure-as-code, hashicorp-terraform]
+    category: devops
+    related: [aws, ansible, kubernetes]
+    roles: [devops]
+  ansible:
+    aliases: [ansible-playbook, ansible-galaxy]
+    category: devops
+    related: [terraform, linux]
+    roles: [devops]
+  jenkins:
+    aliases: [jenkins-pipeline, jenkinsfile]
+    category: devops
+    related: [ci-cd, githubactions]
+    roles: [devops]
+  githubactions:
+    aliases: ["github actions", github-actions, gh-actions, actions-cicd]
+    category: devops
+    related: [ci-cd, github]
+    roles: [devops, backend]
+  gitlabci:
+    aliases: ["gitlab ci", gitlab-cicd, ".gitlab-ci.yml"]
+    category: devops
+    related: [ci-cd, gitlab]
+    roles: [devops]
+  helm:
+    aliases: [helm-charts, helm-chart]
+    category: devops
+    related: [kubernetes]
+    roles: [devops]
+  cicd:
+    aliases: [ci/cd, "ci cd", continuous-integration, continuous-delivery, continuous-deployment, devops-pipeline]
+    category: concept
+    related: [jenkins, githubactions, docker]
+    roles: [devops, backend]
+  prometheus:
+    aliases: [prom, promql]
+    category: devops
+    related: [grafana, monitoring, observability]
+    roles: [devops]
+  grafana:
+    aliases: [grafana-dashboards]
+    category: devops
+    related: [prometheus, monitoring, observability]
+    roles: [devops]
+  nginx:
+    aliases: [reverse-proxy, caddy]
+    category: devops
+    related: [linux, docker]
+    roles: [devops, backend]
+  linux:
+    aliases: [ubuntu, debian, centos, unix, bash]
+    category: devops
+    related: [bash, docker]
+    roles: [devops, backend]
+  monitoring:
+    aliases: [observability, opentelemetry, telemetry, alerting]
+    category: concept
+    related: [prometheus, grafana, logging]
+    roles: [devops, backend]
+  aws:
+    aliases: [amazon-web-services, amazon-aws, ec2, s3, lambda, aws-cloud, cloud-aws]
+    category: cloud
+    related: [azure, gcp, docker]
+    roles: [devops, backend, fullstack]
+  azure:
+    aliases: [azure-cloud, microsoft-azure, azure-functions, "azure devops"]
+    category: cloud
+    related: [aws, gcp, csharp]
+    roles: [devops, backend]
+  gcp:
+    aliases: [google-cloud, google-cloud-platform, gcloud, bigquery-gcp]
+    category: cloud
+    related: [aws, azure, firebase]
+    roles: [devops, data, backend]
+  vercel:
+    aliases: [vercel-deploy, now-sh]
+    category: cloud
+    related: [nextjs, netlify]
+    roles: [frontend, fullstack]
+  netlify:
+    aliases: [netlify-deploy]
+    category: cloud
+    related: [vercel, frontend]
+    roles: [frontend, fullstack]
+  heroku:
+    aliases: [heroku-deploy]
+    category: cloud
+    related: [aws, docker]
+    roles: [backend, fullstack]
+  git:
+    aliases: [git-workflow, git-branching, gitflow]
+    category: tool
+    related: [github, gitlab, version-control]
+    roles: [frontend, backend, fullstack, devops, data, ml, mobile]
+  github:
+    aliases: [github-repos, github-pages, gh]
+    category: tool
+    related: [git, bitbucket]
+    roles: [frontend, backend, fullstack, devops, data, ml, mobile]
+
+  # ---------------- data ----------------
+  pandas:
+    aliases: [pandas-dataframe, python-pandas]
+    category: data
+    related: [python, numpy, data-analysis]
+    roles: [data, ml]
+  numpy:
+    aliases: [np, numpy-scipy]
+    category: data
+    related: [python, pandas, scipy]
+    roles: [data, ml]
+  matplotlib:
+    aliases: [pyplot, matplotlib seaborn]
+    category: data
+    related: [seaborn, plotly, data-visualization]
+    roles: [data, ml]
+  seaborn:
+    aliases: [sns]
+    category: data
+    related: [matplotlib, plotly]
+    roles: [data, ml]
+  plotly:
+    aliases: [plotly-dash, dash, plotly-express]
+    category: data
+    related: [matplotlib, data-visualization, streamlit]
+    roles: [data, ml]
+  powerbi:
+    aliases: ["power bi", power-bi, powerbi-desktop]
+    category: data
+    related: [tableau, data-visualization, sql]
+    roles: [data]
+  tableau:
+    aliases: [tableau-desktop, tableau-public]
+    category: data
+    related: [powerbi, data-visualization]
+    roles: [data]
+  excel:
+    aliases: [ms-excel, advanced-excel, excel-vba, spreadsheets]
+    category: data
+    related: [powerbi, data-analysis]
+    roles: [data]
+  spark:
+    aliases: [pyspark, apache-spark, spark-sql, spark-mllib]
+    category: data
+    related: [hadoop, kafka, scala]
+    roles: [data, ml]
+  hadoop:
+    aliases: [apache-hadoop, hdfs, hive]
+    category: data
+    related: [spark, bigdata]
+    roles: [data]
+  airflow:
+    aliases: [apache-airflow, dag, dags, airflow-dag]
+    category: data
+    related: [etl, data-pipeline, spark]
+    roles: [data, devops]
+  etl:
+    aliases: [elt, data-pipeline, data-pipelines, data-ingestion]
+    category: data
+    related: [airflow, dbt, spark]
+    roles: [data]
+  dbt:
+    aliases: [dbt-core, data-build-tool]
+    category: data
+    related: [sql, snowflake, etl]
+    roles: [data]
+  kafka:
+    aliases: [apache-kafka, kafka-streams, event-streaming]
+    category: data
+    related: [rabbitmq, streaming, microservices]
+    roles: [backend, data]
+  rabbitmq:
+    aliases: [amqp, message-queue, message-queues]
+    category: data
+    related: [kafka, celery, microservices]
+    roles: [backend, data]
+  snowflake:
+    aliases: [snowflake-db, snowflake-warehouse]
+    category: data
+    related: [sql, dbt, data-warehouse]
+    roles: [data]
+  bigquery:
+    aliases: [google-bigquery, bq]
+    category: data
+    related: [gcp, sql, data-warehouse]
+    roles: [data]
+  dataanalysis:
+    aliases: ["data analysis", data-analytics, exploratory-data-analysis, eda, data-wrangling]
+    category: data
+    related: [pandas, statistics, sql]
+    roles: [data, ml]
+  datavisualization:
+    aliases: ["data visualization", dataviz, storytelling-with-data, charts-dashboards]
+    category: data
+    related: [matplotlib, powerbi, tableau]
+    roles: [data]
+  statistics:
+    aliases: [statistical-analysis, inferential-statistics, hypothesis-testing, stats]
+    category: data
+    related: [r, dataanalysis, ml]
+    roles: [data, ml]
+  nlp:
+    aliases: [natural-language-processing, text-classification, sentiment-analysis, tokenization]
+    category: ml
+    related: [transformers, spacy, nltk, llm]
+    roles: [ml, data]
+  # ---------------- ml / ai ----------------
+  tensorflow:
+    aliases: [tf, tensorflow2, keras-tensorflow]
+    category: ml
+    related: [pytorch, python, deep-learning]
+    roles: [ml]
+  pytorch:
+    aliases: [torch, pytorch-lightning, lightning]
+    category: ml
+    related: [tensorflow, python, deep-learning]
+    roles: [ml]
+  sklearn:
+    aliases: [scikit-learn, "scikit learn", scikitlearn]
+    category: ml
+    related: [python, pandas, machine-learning]
+    roles: [ml, data]
+  machinelearning:
+    aliases: ["machine learning", ml, supervised-learning, unsupervised-learning, regression, classification, clustering]
+    category: ml
+    related: [sklearn, statistics, deep-learning]
+    roles: [ml, data]
+  deeplearning:
+    aliases: ["deep learning", neural-networks, cnn, rnn, ann]
+    category: ml
+    related: [tensorflow, pytorch, machine-learning]
+    roles: [ml]
+  huggingface:
+    aliases: ["hugging face", hf, hf-transformers]
+    category: ml
+    related: [transformers, nlp, llm]
+    roles: [ml]
+  langchain:
+    aliases: [langchain-llms, langgraph, llm-framework]
+    category: ml
+    related: [llm, rag, openai, prompt-engineering]
+    roles: [ml]
+  llm:
+    aliases: [large-language-models, "large language models", genai, generative-ai, "generative ai", prompt-engineering, llms]
+    category: ml
+    related: [langchain, rag, transformers, nlp]
+    roles: [ml, data, backend]
+  rag:
+    aliases: [retrieval-augmented-generation, retrieval-augmented, vector-database, embeddings-llm]
+    category: ml
+    related: [llm, langchain, embeddings]
+    roles: [ml, backend]
+  embeddings:
+    aliases: [embedding-models, vector-search, vector-similarity, word-embeddings, sentence-transformers]
+    category: ml
+    related: [rag, llm, nlp]
+    roles: [ml, data]
+  opencv:
+    aliases: [cv2, computer-vision, image-processing]
+    category: ml
+    related: [deep-learning, tensorflow, pytorch]
+    roles: [ml]
+  nltk:
+    aliases: [nltk-toolkit]
+    category: ml
+    related: [nlp, spacy]
+    roles: [ml, data]
+  spacy:
+    aliases: ["spacy", spaCy]
+    category: ml
+    related: [nlp, nltk]
+    roles: [ml, data]
+  xgboost:
+    aliases: [lightgbm, catboost, gradient-boosting, "xgboost/lgbm"]
+    category: ml
+    related: [sklearn, machine-learning]
+    roles: [ml, data]
+  mlops:
+    aliases: [mlops-pipeline, model-deployment, mlflow, experiment-tracking, model-monitoring]
+    category: ml
+    related: [docker, aws, machine-learning]
+    roles: [ml, devops]
+  recommendationsystems:
+    aliases: ["recommendation systems", recommender-systems, recsys, collaborative-filtering]
+    category: ml
+    related: [machine-learning, python]
+    roles: [ml, data]
+
+  # ---------------- mobile ----------------
+  android:
+    aliases: [android-development, android-app, android-studio]
+    category: mobile
+    related: [kotlin, java, jetpackcompose]
+    roles: [mobile]
+  ios:
+    aliases: [ios-development, ios-app, xcode, iphone-app]
+    category: mobile
+    related: [swift, objective-c]
+    roles: [mobile]
+  flutter:
+    aliases: [flutter-dart, flutter-app, flutter-framework]
+    category: mobile
+    related: [dart, reactnative]
+    roles: [mobile]
+  reactnative:
+    aliases: ["react native", react-native, expo]
+    category: mobile
+    related: [react, javascript, flutter]
+    roles: [mobile]
+  jetpackcompose:
+    aliases: ["jetpack compose", android-jetpack, compose-android]
+    category: mobile
+    related: [kotlin, android]
+    roles: [mobile]
+
+  # ---------------- testing / tooling ----------------
+  pytest:
+    aliases: [pytest-fixtures, python-pytest]
+    category: testing
+    related: [unittest, python, tdd]
+    roles: [backend, data, ml]
+  jest:
+    aliases: [jest-testing, react-jest]
+    category: testing
+    related: [react, javascript, vitest]
+    roles: [frontend, fullstack]
+  vitest:
+    aliases: [vitest-testing]
+    category: testing
+    related: [jest, vite, javascript]
+    roles: [frontend, fullstack]
+  junit:
+    aliases: [junit5, testng]
+    category: testing
+    related: [java, springboot]
+    roles: [backend]
+  selenium:
+    aliases: [selenium-webdriver, selenium-python, selenium-java]
+    category: testing
+    related: [testing, playwright, cypress]
+    roles: [frontend, backend]
+  cypress:
+    aliases: [cypress-io]
+    category: testing
+    related: [selenium, playwright, javascript]
+    roles: [frontend, fullstack]
+  playwright:
+    aliases: [playwright-testing, playwright-python]
+    category: testing
+    related: [cypress, selenium, testing]
+    roles: [frontend, fullstack, backend]
+  tdd:
+    aliases: [test-driven-development, unit-testing, integration-testing, test-automation]
+    category: concept
+    related: [pytest, jest, cicd]
+    roles: [backend, frontend, fullstack]
+  postman:
+    aliases: [api-testing, insomnia, swagger-ui]
+    category: tool
+    related: [restapi, openapi]
+    roles: [backend, fullstack]
+  jira:
+    aliases: [confluence, agile-board, backlog-management]
+    category: tool
+    related: [agile, scrum]
+    roles: [frontend, backend, fullstack, devops, data, ml, mobile]
+  figma:
+    aliases: [figma-design, ui-design, adobe-xd]
+    category: tool
+    related: [ui-ux, design]
+    roles: [frontend]
+  agile:
+    aliases: [scrum, kanban, sprint-planning, sprints]
+    category: concept
+    related: [jira, tdd]
+    roles: [frontend, backend, fullstack, devops, data, ml, mobile]
+  uiux:
+    aliases: ["ui/ux", ui-design, ux-design, user-experience, user-research, wireframing]
+    category: concept
+    related: [figma, frontend]
+    roles: [frontend, mobile]
+  oop:
+    aliases: [object-oriented-programming, "object oriented programming", solid-principles, design-patterns]
+    category: concept
+    related: [java, python, cpp]
+    roles: [backend, fullstack, mobile]
+  datastructures:
+    aliases: ["data structures", algorithms, dsa, competitive-programming, problem-solving]
+    category: concept
+    related: [oop, python, java]
+    roles: [backend, fullstack, data, ml]
+  systemdesign:
+    aliases: ["system design", distributed-systems, scalable-systems, high-availability]
+    category: concept
+    related: [microservices, system-architecture, architecture]
+    roles: [backend, devops]
+  security:
+    aliases: [application-security, appsec, owasp, penetration-testing, cybersecurity, infosec]
+    category: concept
+    related: [oauth, jwt, linux]
+    roles: [backend, devops]
+  caching:
+    aliases: [cache, http-caching, cdn, redis-caching]
+    category: concept
+    related: [redis, performance, nginx]
+    roles: [backend, frontend]
+  celery:
+    aliases: [celery-workers, background-tasks, task-queue]
+    category: backend
+    related: [rabbitmq, redis, python]
+    roles: [backend]
+  pydantic:
+    aliases: [pydantic-v2, data-validation]
+    category: backend
+    related: [python, fastapi]
+    roles: [backend]

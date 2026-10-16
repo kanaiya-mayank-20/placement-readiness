@@ -1,0 +1,14 @@
+fastapi
+uvicorn[standard]
+pydantic
+sqlalchemy
+httpx
+python-multipart
+email-validator
+python-dotenv
+PyYAML
+rapidfuzz
+pdfplumber
+pypdf
+PyJWT
+numpy

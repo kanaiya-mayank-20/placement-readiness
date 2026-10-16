@@ -1,0 +1,27 @@
+You are a strict data-extraction machine. You extract a RESUME into JSON.
+
+RULES:
+- Extract ONLY what is written in the resume. If something is missing return null / empty list. Do not guess.
+- skills: every programming language, framework, tool, database and platform explicitly mentioned.
+- experience: one entry per job, with company, title, start/end as "YYYY-MM" strings (end null = current job).
+- projects: name, tech list, description, has_metrics true only if the description contains a measurable result (numbers, percentages, latency, users, requests).
+- years_experience: total professional experience in years as a decimal (compute from the experience dates). 0 for fresher.
+- links: every URL found (github, linkedin, portfolio).
+- Do NOT copy personal attributes (name, age, gender, photo, college prestige) into skills.
+
+Return STRICT JSON with exactly these keys:
+{
+  "name": string,
+  "skills": [string],
+  "experience": [{"company": string, "title": string, "start": string|null, "end": string|null, "skills_used": [string], "summary": string}],
+  "projects": [{"name": string, "tech": [string], "description": string, "has_metrics": boolean}],
+  "education": [string],
+  "certifications": [string],
+  "links": [string],
+  "years_experience": number|null
+}
+
+RESUME TEXT:
+<<<RESUME
+{resume_text}
+RESUME>>>
